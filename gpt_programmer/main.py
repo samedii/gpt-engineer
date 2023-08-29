@@ -58,19 +58,17 @@ def main(
 
     files = parse_chat(messages[-1].content.strip())
 
-    if len(files) == 0:
-        raise ValueError("No files found in chat")
-    elif len(files) > 1:
-        for file in files:
-            print(file)
-        raise ValueError(f"Multiple files ({len(files)}) found in chat")
+    if len(files) == 1:
+        file_path.write_text(content)
+    else:
+        found = False
+        for output_file_path, content in files:
+            if str(output_file_path) == str(file_path):
+                file_path.write_text(content)
+                found = True
 
-    new_file_path, content = files[0]
-
-    if str(new_file_path) != str(file_path):
-        raise ValueError(f"File path mismatch: {new_file_path} != {file_path}")
-
-    file_path.write_text(content)
+        if not found:
+            raise ValueError(f"Could not find {file_path} in output")
 
 
 if __name__ == "__main__":

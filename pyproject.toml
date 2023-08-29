@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "gpt"
+name = "gpt-programmer"
 version = "0.1.0"
 description = ""
 authors = ["Richard Löwenström <samedii@gmail.com>"]
@@ -23,4 +23,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-ge = 'gpt.main:app'
+gpt = 'gpt_programmer.main:app'

@@ -1,9 +1,11 @@
-# gpt-engineer remake
+# gpt-programmer
+
+Based on [gpt-engineer](https://github.com/AntonOsika/gpt-engineer).
 
 ## Usage
 
 ```bash
-ge file.rs
+gpt file.rs preprompt prompt
 ```
 
 ## Development

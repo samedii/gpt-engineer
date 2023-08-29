@@ -4,7 +4,7 @@ You will write a very long answer. Make sure that every detail is, in the end, i
 Think step by step and reason yourself to the right decisions to make sure we get it right.
 You will first lay out the names of the core classes, functions, methods that will be necessary, as well as a quick comment on their purpose.
 
-Then you will output the content of the file including ALL code.
+Then you will output the content of a SINGLE file including ALL code.
 The file must strictly follow a markdown code block format, where the following tokens must be replaced such that
 <FILEPATH> is the file path including the file extension and <CODE> is the code:
 
@@ -16,5 +16,5 @@ The file must strictly follow a markdown code block format, where the following 
 
 Do not comment on what the file does.
 
-Make sure that the file contain all imports, types etc.
+Make sure that the file contains all imports, types etc.
 Ensure to implement all code. If you are unsure, write a plausible implementation.
