@@ -67,8 +67,8 @@ def main(
 
     new_file_path, content = files[0]
 
-    # if str(new_file_path) != str(file_path):
-    #     raise ValueError(f"File path mismatch: {new_file_path} != {file_path}")
+    if str(new_file_path) != str(file_path):
+        raise ValueError(f"File path mismatch: {new_file_path} != {file_path}")
 
     file_path.write_text(content)
 
