@@ -1172,6 +1172,17 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+files = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+    {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+
+[[package]]
 name = "sqlalchemy"
 version = "2.0.20"
 description = "Database Abstraction Library"
@@ -1340,6 +1351,20 @@ slack = ["slack-sdk"]
 telegram = ["requests"]
 
 [[package]]
+name = "treelib"
+version = "1.7.0"
+description = "A Python implementation of tree structure."
+optional = false
+python-versions = "*"
+files = [
+    {file = "treelib-1.7.0-py3-none-any.whl", hash = "sha256:c37795eaba19f73f3e1a905ef3f4f0cab660dc7617126e8ae99391e25c755416"},
+    {file = "treelib-1.7.0.tar.gz", hash = "sha256:9bff1af416b9e642a6cd0e0431d15edf26a24b8d0c8ae68afbd3801b5e30fb61"},
+]
+
+[package.dependencies]
+six = "*"
+
+[[package]]
 name = "typer"
 version = "0.9.0"
 description = "Typer, build great CLIs. Easy to code. Based on Python type hints."
@@ -1493,4 +1518,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8.1,<3.11"
-content-hash = "36dacbf07bc8e3faff3b7b284e40b65635557ab95a616c35b6a7b821fd069397"
+content-hash = "948d29e3a6f8f6b75c3a157d0e8c4ffd96eff12ef8e79ecaea3f43bd71e2cd1a"

@@ -52,6 +52,11 @@ class AI:
             SystemMessage(content=system),
             HumanMessage(content=user),
         ]
+
+        from pathlib import Path
+
+        Path("system").write_text(system)
+        Path("user").write_text(user)
         return self.next(messages, step_name=step_name)
 
     def fsystem(self, msg: str) -> SystemMessage:

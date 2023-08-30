@@ -8,6 +8,12 @@ Based on [gpt-engineer](https://github.com/AntonOsika/gpt-engineer).
 gpt file.rs preprompt prompt
 ```
 
+## Install
+
+```bash
+pip install git+https://github.com/samedii/gpt-programmer
+```
+
 ## Development
 
 Recommended:

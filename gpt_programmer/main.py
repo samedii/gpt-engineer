@@ -11,6 +11,8 @@ app = typer.Typer()
 instruction = """
 {prompt}
 
+Here is the current implementation:
+
 {file_path}
 ```rust
 {file_content}
